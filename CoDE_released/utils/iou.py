@@ -1,0 +1,22 @@
+import numpy as np
+import time
+
+# 计算IoU
+def cal_iou(outputs, gt):
+    """IoU = intersection(A, B) / union(A, B)
+
+    :param outputs: Network Output Mask
+    :param gt:      Mask GroudTruth
+    :return: IoU
+    """
+    eps = 1e-6
+    batch_size = outputs.shape[0]
+    iou = 0
+
+    for idx in range(batch_size):
+        intersection = np.logical_and(outputs[idx], gt[idx]).sum()
+        union = np.logical_or(outputs[idx], gt[idx]).sum()
+        # iou += intersection / (union + eps)
+        iou += intersection / union if union != 0 else 0
+    iou = iou / batch_size
+    return iou
