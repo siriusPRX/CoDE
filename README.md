@@ -1,4 +1,8 @@
 # Employing Reinforcement Learning to Construct a Decision-making Environment for Image Forgery Localization
+[![arXiv](https://img.shields.io/badge/arXiv-2508.07402-b31b1b.svg)](https://ieeexplore.ieee.org/abstract/document/10478835)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+
+Official PyTorch implementation of the paper.
 
 ## Table of Contents
 
@@ -60,3 +64,4 @@ Here we only present the basic training setting, you can browse 'train.py' for m
 
 #### Testing Command:
 > python test.py --WEIGHT-PATH ./weights/CoDE_pre-trained.pth --DATASET dataset --RATIO 0 --VISUALIZE-NUMS -1
+
