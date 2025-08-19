@@ -18,20 +18,21 @@ that can provide reliable localization result of tampered area in forged images.
 as a Markov Decision Process (MDP), where each pixel is equipped with an agent that performs Gaussian distribution-based 
 continuous action to iteratively update the respective forgery probability, so as to achieve pixel-level image forgery 
 localization.
-<center><img src="IFL-MDP.png" width="50%"></center>
-<div align="center">
-    <i>The proposed Markov decision process for image forgery localization.</i>
-</div>
+<p align="center">
+  <img src="IFL-MDP.png" width="60%" /><br>
+  <em>Figure 1: The proposed Markov decision process for image forgery localization.</em>
+</p>
 
-<center><img src="CoDE.png" width="75%"></center>
-<div align="center">
-    <i>The proposed CoDE for image forgery localization task. FPM denotes the forgery probability map.</i>
-</div>
+<p align="center">
+  <img src="CoDE.png" width="60%" /><br>
+  <em>Figure 2: The proposed CoDE for image forgery localization task. FPM denotes the forgery probability map.</em>
+</p>
 
-<center><img src="visual_results.png" width="75%"></center>
-<div align="center">
-    <i>Visual results for image sforgery localization on different benchmark datasets using CoDE.</i>
-</div>
+<p align="center">
+  <img src="visual_results.png" width="60%" /><br>
+  <em>Figure 3: Visual results for image sforgery localization on different benchmark datasets using CoDE.</em>
+</p>
+
 
 
 ## 📋 Dependency
