@@ -1,17 +1,15 @@
 # Employing Reinforcement Learning to Construct a Decision-making Environment for Image Forgery Localization
-[![TIFS2024](https://img.shields.io/badge/IEEE%20TIFS-Article-blue)](https://ieeexplore.ieee.org/abstract/document/10478835)
+[![IEEE TIFS](https://img.shields.io/badge/%20TIFS2024-red)](https://ieeexplore.ieee.org/abstract/document/10478835)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
-Official PyTorch implementation of the paper.
-
-## Table of Contents
+## 📂 Table of Contents
 
 - [Introduction](##Introduction)
 - [Dependency](##Dependency)
 - [Installation](#installation)
 - [Usage](#usage)
 
-## Introduction
+## 📌 Introduction
 The widespread misuse of advanced image editing tools and deep generative techniques has led to a proliferation
 of images with altered content in real-life scenarios, often without any discernible traces of tampering. This has 
 created a potential threat to security and credibility of images. Image forgery localization is an urgent technique. 
@@ -36,11 +34,11 @@ localization.
 </div>
 
 
-## Dependency
+## 📋 Dependency
 * python 3.7.0
 * torch 1.7.1+cu110
 
-## Installation
+## ⚙️ Installation
 #### You can run the following commands to create a new environment:
 > conda create -n env python=3.7.0\
 > pip install -e requirement.txt
@@ -48,7 +46,7 @@ localization.
 #### Or you can directly run this command to setup your environment:
 > conda env create -f environment.yaml
 
-## Usage
+## 💻 Usage
 #### Data Preparation:
 > Put the images in "dataset/forgery/" and the ground-truth of masks in "dataset/gt/", then generate the index "data.txt" under "dataset/".\
 > We have given the template of "dataset/", please check in the directory for more details.
@@ -65,5 +63,16 @@ Here we only present the basic training setting, you can browse 'train.py' for m
 #### Testing Command:
 > python test.py --WEIGHT-PATH ./weights/CoDE_pre-trained.pth --DATASET dataset --RATIO 0 --VISUALIZE-NUMS -1
 
-
-
+## 🌟 Citation
+If you find our work useful, please cite:
+```bibtex
+@article{peng2024employing,
+  title={Employing reinforcement learning to construct a decision-making environment for image forgery localization},
+  author={Peng, Rongxuan and Tan, Shunquan and Mo, Xianbo and Li, Bin and Huang, Jiwu},
+  journal={IEEE Transactions on Information Forensics and Security},
+  volume={19},
+  pages={4820--4834},
+  year={2024},
+  publisher={IEEE}
+}
+```
