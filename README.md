@@ -1,4 +1,4 @@
-# TIFS2024: Employing Reinforcement Learning to Construct a Decision-making Environment for Image Forgery Localization
+# Employing Reinforcement Learning to Construct a Decision-making Environment for Image Forgery Localization
 [![IEEE TIFS](https://img.shields.io/badge/%20TIFS2024-red)](https://ieeexplore.ieee.org/abstract/document/10478835)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
@@ -77,4 +77,5 @@ If you find our work useful, please cite:
   publisher={IEEE}
 }
 ```
+
 
